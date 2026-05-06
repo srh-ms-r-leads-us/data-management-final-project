@@ -1,37 +1,19 @@
 # Data Management Final Project
 
-## Branch Management
+## Members
 
-Since this repository will not contain a large amount of code, merge conflicts are expected to be infrequent. 
-Each contributor should first create a branch named `dev_<owner>` (e.g., `dev_yang`), make changes on that branch, 
-and then push to the `master` branch. If conflicts occur, resolve them within the `dev_<owner>` branch.
+- Ritu Ritu
+- Munib Ahmed
+- Way Trac
+- Zhixiao Yang
 
-## Project Structure
+## Problem Definition and Background
 
-- `data/`: Stores raw and processed datasets used in the Tableau project (e.g., CSV, Excel, extracts).
-- `docs/`: Contains project documentation (e.g., docs, ppts), including data dictionaries, design notes, and analysis summaries.
-- `flows/`: Includes Tableau Prep flow files (.tfl/.tflx) for data cleaning and transformation pipelines.
-- `scripts/`: Holds supporting scripts (e.g., Python) for data preprocessing, validation, or automation.
+This project uses the FIFA 21 Messy and Raw Dataset from Kaggle to perform data preparation and cleaning using Python and Tableau. The dataset contains detailed football player information collected from external web sources, including player attributes, club data, ratings, and financial information.
 
-## File Naming Rules
+Since the dataset is provided in a raw and unstructured form, preprocessing is required before analysis and visualization can be performed reliably. The goal of this project is to transform the dataset into a clean, consistent, and analysis-ready format suitable for further exploration and data-driven insights.
 
-### Column Naming
+## Raw Data
 
-- Lowercased words connected by underbars
-- New column's name is old column's name + `'_cleaned'`
-- If intermediate columns are needed, name them appropriately based on their purpose
-
-### File Naming (for data / outputs)
-
-- Pattern: <stage>_<col_range>.<ext>
-- Example: output_col_01_15.csv
-
-### Tableau Prep Flow Naming
-
-- Pattern: flow_<col_range>.tfl
-- Example: flow_col_01_15.tfl
-
-### Script Naming
-
-- Pattern: <action>_<col_range>.py
-- Example: clean_col_01_15.py, validate_col_16_30.py, explore_col_31_45.py, etc.
+- Raw data file: [fifa21 raw data v2.csv](data/fifa21%20raw%20data%20v2.csv)
+- schema.org markup: [fifa21_raw_data_v2.json](docs/fifa21_raw_data_v2.json)
