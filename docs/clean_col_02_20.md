@@ -6,21 +6,19 @@
 
 ## Name
 
-- Trim spaces.
+- No cleaning required.
 
 ## LongName
 
-- Trim spaces.
+- No cleaning required.
 
 ## photoUrl
 
 - Rename the column name to `PhotoUrl`
-- Trim spaces.
 
 ## playerUrl
 
 - Rename the column name to `PlayerUrl`
-- Trim spaces.
 
 ## Nationality
 
@@ -30,7 +28,6 @@
   - `China PR` → `China`
   - `DR Congo` → `Democratic Republic of the Congo`
   - `Republic of Ireland` → `Ireland`
-- Trim spaces.
 
 ## Age
 
@@ -130,7 +127,6 @@ Example:
 ## Preferred Foot
 
 - Rename the column name to `PreferredFoot`
-- Trim spaces.
 
 ## BOV
 

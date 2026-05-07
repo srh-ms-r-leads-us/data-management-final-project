@@ -42,12 +42,7 @@ ENV/
 # =========================
 logs/
 *.log
-
-# =========================
-# Data (usually large / local)
-# =========================
-data/*
-!data/README.md
+*.log.*
 
 # =========================
 # Model artifacts
