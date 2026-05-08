@@ -44,7 +44,7 @@ def compute_raw_quality_score(df):
     def check_height(v):
         if pd.isna(v):
             return 0
-        # Clean format would be just a number (no "cm" or feet/inches)
+        # Clean format would be just a number 
         s = str(v).strip()
         return 1 if re.match(r'^\d+$', s) else 0
 
@@ -107,7 +107,7 @@ def compute_raw_quality_score(df):
     cons_checks = 0
     if {"OVA", "POT"}.issubset(df.columns):
         cons += (df["POT"] >= df["OVA"]).fillna(False).astype(int); cons_checks += 1
-    # Contract format check: should be "YYYY ~ YYYY" or "Free" or contain "On Loan"
+    
     if "Contract" in df.columns:
         def check_contract(v):
             if pd.isna(v):
@@ -151,7 +151,7 @@ def get_output_schema():
         "Age": prep_int(),
         "OVA": prep_int(),
         "POT": prep_int(),
-        # NEW from this script
+       
         "Completeness_Score": prep_decimal(),
         "Validity_Score": prep_decimal(),
         "Consistency_Score": prep_decimal(),
