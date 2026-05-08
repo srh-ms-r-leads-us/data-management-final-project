@@ -305,8 +305,6 @@ These insights emerged during the cleaning process and are worth highlighting in
 
 5. **Free agents and €0 valuations.** 248 players have `Value = €0`. These are not data quality issues; they are legitimate free agents. Our `Wage_Value_Flag` calculated field treats this as a separate category rather than an outlier.
 
-6. **Fuzzy duplicate candidates.** Despite zero exact duplicates by ID, fuzzy matching surfaced near-duplicate name pairs (e.g., "Mousa Dembélé" vs "Moussa Dembélé"). Manual review confirmed these are *different real players* — illustrating that fuzzy matching surfaces *candidates*, not confirmed duplicates.
-
 ---
 
 ## Tools and Versions
